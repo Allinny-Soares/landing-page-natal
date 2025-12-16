@@ -3,26 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Ntal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="day">
-    <div class="snow"></div>
 
+    <title>Feliz Natal 🎄</title>
+
+    <meta name="description" content="Landing page interativa de Natal com contagem regressiva, animações e mensagem especial.">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="day">
+
+    <!-- Camadas de estrelas / neve -->
+    <div class="snow layer1"></div>
+    <div class="snow layer2"></div>
+    <div class="snow layer3"></div>
+
+    <!-- Cabeçalho -->
     <header>
-        <h1>Feliz Natal!</h1>
-        <p>Que seu Natal seja cheio de luz e esperança.</p>
+        <h1>&#127876; Feliz Natal!</h1>
+        <p>&#127873; Que seu Natal seja cheio de luz e esperança.</p>
     </header>
+
+    <!-- Conteúdo principal -->
     <main>
         <section class="countdown">
             <h2>Contagem regressiva para o Natal</h2>
-            <div id="timer"></div>
+            <div id="timer" aria-live="polite"></div>
         </section>
-        <p id="message"></p>
-    </main>    
 
+        <p id="message"></p>
+    </main>
+
+    <!-- Rodapé -->
     <footer>
-        <p>Feito com coração em JavaScript</p>
+        <p>Feito com &#128150; em JavaScript</p>
     </footer>
+
+    <!-- Script -->
+    <script src="./src/js/script.js"></script>
+
 </body>
 </html>
